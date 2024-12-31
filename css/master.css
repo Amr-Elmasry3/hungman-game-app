@@ -1,0 +1,205 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root{
+  --white-color: #ffffff;
+  --green-color: #009688;
+  --red-color: #f44336;
+  --grey-color: #EEE;
+}
+body{
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--grey-color);
+  margin: 0;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+a{
+  text-decoration: none;
+}
+.contanier{
+  margin: 0 90px;
+}
+@media (max-width: 767px){
+  .contanier{
+    margin: 0 20px;
+  }
+}
+/* End Global Rules */
+/* Start Head */
+.head{
+  background-color: var(--green-color);
+  padding: 20px 10px;
+}
+.head .contanier{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head .contanier .game-name{
+  color: var(--white-color);
+  font-size: 20px;
+}
+.head .contanier .source-word{
+  color: white;
+  font-size: 17px;
+}
+.head .contanier .source-word span{
+  color: var(--red-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+/* End Head */
+/* Start Content */
+.content .contanier{
+  background-color: var(--white-color);
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  justify-items: center;
+  border-bottom: 2px solid var(--green-color);
+}
+@media (max-width: 767px){
+  .content .contanier{
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: none;
+  }
+}
+.content .contanier .shape{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content .contanier .shape .man{
+  position: relative;
+  width: 137px;
+  height: 90%;
+  background-color: white;
+}
+.content .contanier .shape .man span{
+  position: absolute;
+  background-color: #121212;
+  display: none;
+}
+/* Appere Class Used Ib JavaScritp */
+.content .contanier .shape .man .appere{
+  display: block;
+}
+.content .contanier .shape .man .one{
+  width: 50px;
+  height: 4px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content .contanier .shape .man .two{
+  width: 4px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content .contanier .shape .man .three{
+  width: 70px;
+  height: 4px;
+  left: 50%;
+}
+.content .contanier .shape .man .three::after{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background-color: #121212;
+  right: 0;
+}
+.content .contanier .shape .man .four{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px dotted #121212;
+  background-color: transparent;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+.content .contanier .shape .man .five{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid #121212;
+  background-color: transparent;
+  right: 0;
+  transform: translate(50%, 83%);
+}
+.content .contanier .shape .man .six{
+  width: 4px;
+  height: 67px;
+  background-color: #121212;
+  top: 82px;
+  right: 0;
+  transform: translateX(50%);
+}
+.content .contanier .shape .man .seven{
+  width: 30px;
+  height: 4px;
+  right: -3px;
+  top: 99px;
+  transform: rotate(35deg);
+}
+.content .contanier .shape .man .seven::after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  right: -19px;
+  top: -14px;
+  background-color: #121212;
+  transform: rotate(109deg);
+}
+.content .contanier .shape .man .eight{
+  width: 30px;
+  height: 4px;
+  right: -3px;
+  top: 152px;
+  transform: rotate(-34deg);
+}
+.content .contanier .shape .man .eight::after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  right: -19px;
+  top: 13px;
+  background-color: #121212;
+  transform: rotate(72deg);
+}
+.content .contanier .characters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content .contanier .characters span{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: var(--green-color);
+  margin: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+/* End Content */
+
+
+/* 3 */
